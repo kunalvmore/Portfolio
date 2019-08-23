@@ -1,0 +1,609 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+  padding: 0px;
+
+}
+/*---NavBar---*/
+
+.nav {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  background-color: #2D4059;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline;
+  font-size: 18px;
+  color: #000000;
+  padding: 0px 10px 10px 30px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline-block;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 50px 13px 10px;
+  text-decoration: none;
+  color: #F6F6F6;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: #3e64ff;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+
+  .nav > .nav-header > .nav-title {
+    display: inline;
+    font-size: 18px;
+    color: #000000;
+    padding: 0px 10px 10px 10px;
+  }
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: #3e64ff;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #F6F6F6;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #2D4059;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+    text-align: center;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+/*----Home-----*/
+
+.container-one{
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-color: #2D4059;
+
+}
+.Home{
+
+font-size: 3em;
+font-weight: bold;
+display: inline-block;
+padding: 100px 0;
+margin-top: 135px;
+
+color: white;
+}
+
+/*---About Page----*/
+
+.container-two{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: #FFB400;
+  flex-direction: column;
+  padding: 100px 0;
+  text-align: center;
+}
+.box-one{
+  display: block;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+flex: 1;
+
+}
+.box-two{
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  flex: 1;
+  padding: 15px;
+  margin-top: 10px;
+}
+.containner-one >img{
+
+}
+/*---Worke---*/
+.container-three{
+  width: 100%;
+  height: 100vh;
+  background-color: #f5f7f8;
+  padding: 10px;
+}
+.Work{
+  display: flex;
+  border-radius: 5px;
+  flex-direction: column;
+  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.2);
+
+}
+h1,h2{
+  margin: 10px;
+}
+.project-box-one >img{
+  max-width:100%;
+  height: auto;
+}
+.project-box-one{
+  background-color: #2D4059;
+  flex: 1;
+
+
+}
+.project-box-onedescreaption{
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  padding: 10px 30px;
+
+}
+.p-one{
+  display:block;
+font-size: 20px;
+margin: 5px;
+color: #959595;
+}
+.p-two{
+font-size: 2em;
+margin: 10px 5px;
+font-weight: bold;
+}
+.p-three{
+font-size: 1em;
+padding: 5px;
+}
+.btn{
+  color:white;
+  text-decoration: none;
+  font-size: 18px;
+  background-color: #3e64ff;
+  padding: 10px;
+  border-radius: 10px;
+  margin:10px;
+  opacity: 1.0;
+  text-align: center;
+  width:250px;
+
+
+}
+.btn:hover{
+  opacity: 0.8;
+}
+.btn > a{
+  color: white;
+}
+
+/*---Container four---*/
+.container-four{
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  background-color: #F6F6F6;
+}
+.Education{
+display: flex;
+flex-direction: column;
+}
+.Education p{
+  margin: 5px;
+  color: white;
+
+}
+.Education-box-one{
+  flex: 1;
+  background-color: #3e64ff;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px -8px rgba(0,0,0,1.5);
+
+}
+.Education-box-two{
+  flex: 1;
+  background-color: #3e64ff;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px -8px rgba(0,0,0,1.5);
+
+}
+.Education-box-three{
+  flex: 1;
+  background-color: #3e64ff;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px -8px rgba(0,0,0,1.5);
+
+}
+/*----Skills----*/
+.container-five{
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  background-color: #EA5455;
+
+}
+.Skills{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Skills >div{
+  background-color: #FFFFFF;
+  margin: 10px;
+  padding: 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  width: 150px;
+   text-align: center;
+   box-shadow: 0 8px 16px -8px rgba(0,0,0,1.5);
+   opacity: 1.0;
+}
+.Skills >div:hover{
+  opacity: 0.5;
+
+}
+.container-five > h1 {
+  color: white;
+}
+/*-----Contact Me-----*/
+.container-six{
+  width: 100%;
+  height: 500px;
+}
+.container-six > h1{
+  font-size: 2em;
+  text-align: center;
+  margin: 15px;
+}
+
+.contact{
+  text-align: center;
+  font-size: 20px;
+  padding: 15px;
+  margin: 1px 25px;
+}
+.Social-icon{
+  margin: 25px 0px;
+}
+.footer{
+  width: 100%;
+  height: 70px;
+  background-color: #2D4059;
+  padding: 25px;
+  text-align: center;
+}
+.footer >p{
+  color: #F6F6F6;
+}
+
+/*-----Icons-----*/
+.Social-icon{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+}
+.icon >a{
+  flex: 1;
+  padding: 0px 5px;
+  opacity: 1.0;
+}
+.icon >a:hover{
+  opacity: 0.5;
+
+}
+
+/*----for desktop----*/
+
+@media only screen and (min-width:768px){
+        .container-two{
+      /*    background-color: #ddd;   */
+          flex-direction: row;
+          padding: 25px;
+        }
+        .box-one{
+          /*---background-color:white;--*/
+          padding: 25px;
+          margin:auto;
+          width: 60%;
+        }
+        .box-two{
+      /*    background-color: #FFEBEE;*/
+          padding: 25px;
+          margin:auto;
+          width: 60%;
+      /*    border: 3px solid #ddd; */
+          margin-right:25px;
+        }
+        .Work{
+          display: flex;
+          flex-direction: row;
+          margin: auto;
+          width: 85%;
+
+        }
+        .project-box-one >img{
+          width: 100%;
+        }
+
+        /*---Education---*/
+        .container-four{
+          background-color: #FFFFFF;
+        }
+        .Education{
+        margin: 35px 200px;
+        }
+        .Education-box-one{
+        text-align: center;
+        margin-bottom: 7px;
+
+        }
+        .Education-box-two{
+        text-align: center;
+        margin-bottom: 7px;
+        }
+        .Education-box-three{
+        text-align: center;
+        margin-bottom: 7px;
+        }
+
+        /*----Skills----*/
+        .container-five{
+          text-align: center;
+          }
+        .Skills{
+          display: inline-flex;
+          justify-content: center;
+          text-align: center;
+          width: 80%;
+          padding: 15px;
+
+        }
+        .Skills >div{
+          background-color: white;
+          margin: 20px 10px;
+          padding: 20px 20px;
+          font-size: 20px;
+          border-radius: 5px;
+          width: 150px;
+          text-align: center;
+        }
+        .container-six{
+          width: 100%;
+          height: 290px;
+        }
+
+
+
+
+}
+
+@media screen and (min-width: 320px) and (orientation: landscape) {
+#viewland{
+  height: 650px;
+}
+
+}
+
+
+
+/*----- fab -----*/
+
+.fab-wrapper {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+}
+.fab-checkbox {
+  display: none;
+}
+.fab {
+  position: absolute;
+  bottom: -1rem;
+  right: -1rem;
+  width: 4rem;
+  height: 4rem;
+  background: blue;
+  border-radius: 50%;
+  background: #3e64ff;
+  box-shadow: 0px 5px 20px #81a4f1;
+  transition: all 0.3s ease;
+  z-index: 1;
+  border-bottom-right-radius: 6px;
+  border: 1px solid #3e64ff;
+}
+
+.fab:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.fab-checkbox:checked ~ .fab:before {
+  width: 90%;
+  height: 90%;
+  left: 5%;
+  top: 5%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.fab:hover {
+  background: #3e64ff;
+  box-shadow: 0px 5px 20px 5px #81a4f1;
+}
+
+.fab-dots {
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  background-color: white;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateX(0%) translateY(-50%) rotate(0deg);
+  opacity: 1;
+  animation: blink 3s ease infinite;
+  transition: all 0.3s ease;
+}
+
+.fab-dots-1 {
+  left: 15px;
+  animation-delay: 0s;
+}
+.fab-dots-2 {
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  animation-delay: 0.4s;
+}
+.fab-dots-3 {
+  right: 15px;
+  animation-delay: 0.8s;
+}
+
+.fab-checkbox:checked ~ .fab .fab-dots {
+  height: 6px;
+}
+
+.fab .fab-dots-2 {
+  transform: translateX(-50%) translateY(-50%) rotate(0deg);
+}
+
+.fab-checkbox:checked ~ .fab .fab-dots-1 {
+  width: 32px;
+  border-radius: 10px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+.fab-checkbox:checked ~ .fab .fab-dots-3 {
+  width: 32px;
+  border-radius: 10px;
+  right: 50%;
+  transform: translateX(50%) translateY(-50%) rotate(-45deg);
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.25;
+  }
+}
+
+.fab-checkbox:checked ~ .fab .fab-dots {
+  animation: none;
+}
+
+.fab-wheel {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 1px solid #;
+  width: 10rem;
+  height: 10rem;
+  transition: all 0.3s ease;
+  transform-origin: bottom right;
+  transform: scale(0);
+}
+
+.fab-checkbox:checked ~ .fab-wheel {
+  transform: scale(1);
+}
+.fab-action {
+  position: absolute;
+  background: #F6F6F6;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: White;
+  box-shadow: 0 0.1rem 1rem rgba(24, 66, 154, 0.82);
+  transition: all 1s ease;
+  opacity: 0;
+}
+
+.fab-checkbox:checked ~ .fab-wheel .fab-action {
+  opacity: 1;
+}
+
+.fab-action:hover {
+  background-color: #3e64ff;
+}
+
+.fab-wheel .fab-action-1 {
+  right: -1rem;
+  top: 0;
+}
+
+.fab-wheel .fab-action-2 {
+  right: 3.4rem;
+  top: 0.5rem;
+}
+.fab-wheel .fab-action-3 {
+  left: 0.5rem;
+  bottom: 3.4rem;
+}
+.fab-wheel .fab-action-4 {
+  left: 0;
+  bottom: -1rem;
+}
