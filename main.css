@@ -161,7 +161,7 @@ flex: 1;
 /*---Worke---*/
 .container-three{
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: #f5f7f8;
   padding: 10px;
 }
@@ -170,8 +170,17 @@ flex: 1;
   border-radius: 5px;
   flex-direction: column;
   box-shadow: 0 8px 16px -8px rgba(0,0,0,0.2);
-
+  margin-bottom: 35px;
 }
+.Work-blog-boss{
+  margin-top: 10px;
+  display: flex;
+  border-radius: 5px;
+  flex-direction: column;
+  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.2);
+  margin-bottom: 35px;
+}
+
 h1,h2{
   margin: 10px;
 }
@@ -191,7 +200,7 @@ h1,h2{
   display: flex;
   flex-direction: column;
   background-color: #FFFFFF;
-  padding: 10px 30px;
+  padding: 10px 10px;
 
 }
 .p-one{
@@ -219,7 +228,6 @@ padding: 5px;
   margin:10px;
   opacity: 1.0;
   text-align: center;
-  width:250px;
 
 
 }
@@ -230,10 +238,11 @@ padding: 5px;
   color: white;
 }
 
+
 /*---Container four---*/
 .container-four{
   width: 100%;
-  height: 100vh;
+  height: 670px;
   padding: 10px;
   background-color: #F6F6F6;
 }
@@ -276,7 +285,7 @@ flex-direction: column;
 /*----Skills----*/
 .container-five{
   width: 100%;
-  height: 100vh;
+  height: auto;
   padding: 10px;
   background-color: #EA5455;
 
@@ -374,15 +383,36 @@ flex-direction: column;
       /*    border: 3px solid #ddd; */
           margin-right:25px;
         }
+
+        /*work*/
         .Work{
           display: flex;
           flex-direction: row;
+          width: 85%;
+          margin: auto;
+          margin-bottom: 25px;
+
+        }
+        .Work-blog-boss{
+          display: flex;
+          flex-direction: row-reverse;
           margin: auto;
           width: 85%;
+          margin-top: 10px;
+          margin-bottom: 25px;
 
+        }
+        .container-three h1{
+          margin-bottom: 20px;
         }
         .project-box-one >img{
           width: 100%;
+        }
+        .btn{
+          width: 250px;
+        }
+        .project-box-onedescreaption{
+            padding: 10px 30px;
         }
 
         /*---Education---*/
@@ -409,6 +439,7 @@ flex-direction: column;
         /*----Skills----*/
         .container-five{
           text-align: center;
+          height: 650px;
           }
         .Skills{
           display: inline-flex;
@@ -416,6 +447,7 @@ flex-direction: column;
           text-align: center;
           width: 80%;
           padding: 15px;
+          margin-top: 80px;
 
         }
         .Skills >div{
@@ -437,13 +469,15 @@ flex-direction: column;
 
 }
 
-@media screen and (min-width: 320px) and (orientation: landscape) {
-#viewland{
-  height: 650px;
-}
+
+@media only screen and (orientation : landscape) {
+  .container-one,.container-two{
+    height: 650px;
+
+
+  }
 
 }
-
 
 
 /*----- fab -----*/
